@@ -1,12 +1,18 @@
 #include <stdio.h>
+#define PI 3.14159  
 
 int main() {
-    float celsius, fahrenheit;
-    printf("Nhap nhiet do (do Celsius): ");
-    scanf("%f", &celsius);
-    fahrenheit = (celsius * 9 / 5) + 32;
+    float radius, circumference, area;
 
-    printf("Nhiet do tuong ung theo do Fahrenheit la: %.2f\n", fahrenheit);
+    printf("Nhap ban kinh hinh tron (r): ");
+    scanf("%f", &radius);
+
+
+    circumference = 2 * PI * radius;
+    area = PI * radius * radius;
+
+    printf("Chu vi hinh tron: %.2f\n", circumference);
+    printf("Dien tich hinh tron: %.2f\n", area);
 
     return 0;
 }
